@@ -1,0 +1,93 @@
+<h1>Home#index</h1>
+<p>Find me in app/views/home/index.html.erb</p>
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="index.css">
+			
+		</style>
+		<title>My project</title>
+	</head>
+	<body>
+		/Users/hgpmac140/Desktop/team.sat/index.html
+	<!---Header Section--->
+		<header class="main-header">
+			<nav>
+				<div>
+					<a href="">P1</a>
+					<a href="">P2</a>
+				</div>		
+			</nav>
+		</header>
+		<br>
+	<!---Main Section--->
+		<main>
+		<!---Personal Section--->
+			<section>
+				<div class="personal-section">
+					<img src=".../assets/main1.jpg" width="500px" height="500px">
+					<ul> Name: Odera Nwosu</ul>
+					<ul>Age: 15</ul>
+					<ul>Email: oderanwosu.j@gmail.com</ul>
+					<ul>Cohort: Oak7</ul>
+					<ul>Mision Statement:<br>The Hidden Genius Project trains and
+						mentors black male youth <br> in technology creation, enterpreurniship, and leadership skills to transform their lives and <br>scommunity</ul>
+				</div>
+			</section class="video1-section">
+		<!---My Video-->
+			<section>
+				<video width="400" controls>
+				  <source src="mov_bbb.mp4" type="video/mp4">
+				  <source src="mov_bbb.ogg" type="video/ogg">
+				</video>
+			<p> 
+			<p href="https://www.bigbuckbunny.org/" target="_blank"></p>.
+			</p>
+			</section>
+		<!---Partner Video--->
+			<section>
+				<video width="400" controls>
+				  <source src="mov_bbb.mp4" type="video/mp4">
+				  <source src="mov_bbb.ogg" type="video/ogg">
+				 
+				</video>
+				<p>
+				<p href="https://www.bigbuckbunny.org/" target="_blank"></p>.
+				</p>
+			</section>
+		<!---footer--->
+			<section class="footer-section">
+				<form name="input">
+					<label>Name:</label>
+						<input type="name" name="name">
+					<br>
+					<br>
+					<label>E-mail:</label>
+						<input type="Email" name="email">
+					<br>
+					<br>
+					<label>Message:</label>
+						<input type="text" name="message">
+						<br>
+						<br>
+					<button onclick="submitData" class="submit">Submit</button>
+				</form>
+			</section>
+		</main>
+		<script>
+			var name = document.getElementById("name").value;
+			var Email = document.getElementById("email").value;
+			var message = document.getElementById("message").value;
+
+			function submitData() {
+				localStorage.clear('name')
+				localStorage.clear('email')
+				localStorage.clear('message')
+				localStorage.setItem('name' , 'name')
+				localStorage.setItem('email' , 'email')
+				localStorage.setItem('message', 'message')
+			}
+
+		</script>
+	</body>
+</html>
